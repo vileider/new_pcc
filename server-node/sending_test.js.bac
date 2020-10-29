@@ -1,0 +1,21 @@
+var express = require('express');
+var fs = require('fs');
+var { response } = require('express');
+
+
+
+app.post('/', (req,res) =>{
+    draggeJ = request.body;
+    console.log('consola:   ', draggedJ);
+    if()
+    false.writeFile(path.join(_dirname, '/', 'test.json'),
+    err =>{
+        if(err) throw err;
+        console.log('plik zapisany', draggedJ);
+
+    })
+    response.json({
+        status: ' ok ok ok'
+    })
+});
+

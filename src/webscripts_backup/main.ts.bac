@@ -1,0 +1,30 @@
+
+var saveTypedLPIntoObject = () => {
+    var loginAndPasswordHolder= {
+        login: '',
+        password: ''
+    };  
+    loginAndPasswordHolder.login = (
+        <HTMLInputElement>document.getElementById('loginField')).value;
+    (<HTMLInputElement>document.getElementById('loginField')).value = ''; //clearing field
+    loginAndPasswordHolder.password = (
+        <HTMLInputElement>document.getElementById('passwordField')).value;
+        (<HTMLInputElement>document.getElementById('passwordField')).value = '';//clearing field
+    //return loginAndPasswordHolder;
+    console.log(loginAndPasswordHolder);
+};
+
+    var loginButton =document.getElementById('loginButton');
+    (<HTMLBodyElement>loginButton)
+    .addEventListener('click', saveTypedLPIntoObject );
+
+
+
+
+
+
+
+
+
+
+

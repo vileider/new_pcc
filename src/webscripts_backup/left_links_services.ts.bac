@@ -1,0 +1,28 @@
+
+import {deleteElementsInsideDiv} from'./html_service_templates.js';
+import {createDiv} from './html_service_templates.js';
+import {addTextToElement} from './html_service_templates.js';
+import {createInputField} from './html_service_templates.js';
+import {addButton} from './html_service_templates.js';
+//import {eraseTextInside} from './html_service_templates.js';
+
+
+var createLoginEnvironment =  () => {
+    deleteElementsInsideDiv('infoPanel');
+    createDiv('infoPanel', 'loginDiv');
+    addTextToElement('loginDiv', 'Login  ');
+    createInputField('loginDiv', 'loginField');
+    createDiv('infoPanel', 'passwordDiv');
+    addTextToElement('passwordDiv', '\n Password');
+    createInputField('passwordDiv', 'passwordField');
+    addButton('infoPanel', 'Login');
+
+};
+//alert('ddd');
+(<HTMLHtmlElement>document.getElementById('loginLeftLink'))
+.addEventListener('click',  () => {
+    createLoginEnvironment();
+    
+});
+
+
